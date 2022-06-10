@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/54f9336c0f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet"> 
+    <title>List</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">List of users</h1>
+            <h3 class="credits">Made by Gustavo Carrillo Cervera</h3>
+        </header>
+
+        <main class="main">
+            <div class="buttons">
+                <button class="btn" id="btn_add">Add Person</button>
+                <button class="btn" id="btn_quit">Remove Person</button>
+                <button class="btn" id="btn_mod">Modify Person</button>
+                <div class="search_box">
+                    <span><i class="fa fa-search"></i></span>
+                    <input class="search" type="text" placeholder="Search..." name="search" id="search">
+                    <span><i class="fa fa-times empty" id="xButton"></i></span>
+                </div>
+                
+            </div>
+
+            <form class="form_none" id="form">
+                <div class="simple">
+                    <div class="register">
+                        <label for="namei" id="label_name" class="label_in">Name:</label>
+                        <input type="text" class="form_in" name="namei" id="form_name_in" maxlength="20">
+                    </div>
+                    <div class="register">
+                        <label for="lastName" id="label_lastName" class="label_in">Last Name:</label>
+                        <input type="text" class="form_in" name="lastName" id="form_lastName_in" maxlength="20">
+                    </div>
+                    <div class="register">
+                        <label for="phone" id="label_phone" class="label_in">Phone:</label>
+                        <input type="text" class="form_in" name="phone" id="form_phone_in" maxlength="15">
+                    </div>
+
+                    <p class="missing_none" id="missing_none">Write all the data.</p>
+
+                    <button type="submit" class="sub" id="sub">Add +</button>
+                </div>
+                
+                <div class="register">
+                    <label for="addres" id="label_addres" class="label_in">Addres:</label>
+                    <br>
+                    <textarea name="addres" id="addres" maxlength="250"></textarea>
+                </div>
+            </form>
+
+            <p class="choose_none" id="choose">Choose a person</p>
+            
+            <table class="people" id="people">
+                <!-- ELEMENTS ADD WITH PHP AND MYSQL -->
+            </table>
+        </main>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
